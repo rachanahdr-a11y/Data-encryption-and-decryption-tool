@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple AES Encryption/Decryption Tool</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="mode-toggle">
+        <label class="switch">
+            <input type="checkbox" id="modeSwitch" />
+            <span class="slider round"></span>
+        </label>
+        <span id="modeLabel">Light Mode</span>
+    </div>
+    <div class="container">
+        <h1>Data Encryption and Decryption Tool</h1>
+        <label for="key">Encryption Key:</label>
+        <div class="key-input-wrapper">
+            <input type="password" id="key" placeholder="Enter encryption key" />
+            <button id="toggleKeyBtn" title="Show/Hide Key">Show</button>
+        </div>
+
+        <label for="inputText">Input Text:</label>
+        <textarea id="inputText" placeholder="Enter text to encrypt or decrypt"></textarea>
+
+        <div class="buttons">
+            <button id="encryptBtn">Encrypt</button>
+            <button id="decryptBtn">Decrypt</button>
+        </div>
+
+        <label for="outputText">Output:</label>
+        <textarea id="outputText" readonly placeholder="Result will appear here"></textarea>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
