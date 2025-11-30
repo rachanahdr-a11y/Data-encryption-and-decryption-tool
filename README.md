@@ -54,5 +54,8 @@ This is a web-based tool that allows users to encrypt and decrypt text data usin
 ---
 
 Feel free to customize and enhance this tool further to suit your needs.
+ ## Repository
+You can clone the repository using the following command:
+git clone https://github.com/rachanhdr-a11y/Data-Encryption-and-Decryption-Tool
 
 
